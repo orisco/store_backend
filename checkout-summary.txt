@@ -1,0 +1,11 @@
+
+        révéler - The beauty store.
+        ----------------------------------
+        Purchase Summary
+        Order Date: Mon Mar 15 2021 13:59:24 GMT+0200 (Israel Standard Time)
+        Delivered To: ori say
+        City: Haifa
+        Street: 111
+        Final Price: 66.5
+        Last 4 Digits of Credit Card: 1111
+        Delivery Date: Fri Mar 19 2021 00:00:00 GMT+0200 (Israel Standard Time)
