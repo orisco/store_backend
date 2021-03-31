@@ -31,6 +31,6 @@ app.use('/cart', require("./routes/cart.routes"))
 
 
 
-app.listen(8080, () => {
+app.listen(80, () => {
   console.log("server is running")
 })
