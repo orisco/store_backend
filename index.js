@@ -3,6 +3,7 @@ const app = express()
 const cors = require("cors")
 const mongoose = require("./db/mongoose")
 const {load} = require('./config/collectionConfig')
+const path = require('path')
 
 // RUN THIS ONCE FOR ADMIN, CATEGORIES AND PRODUCTS.
 load()
@@ -27,8 +28,6 @@ app.use('/auth', require("./routes/auth.routes"))
 app.use('/checkout', require("./routes/checkout.routes"))
 app.use('/product', require("./routes/product.routes"))
 app.use('/cart', require("./routes/cart.routes"))
-
-
 
 
 
