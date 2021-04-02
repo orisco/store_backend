@@ -3410,7 +3410,7 @@ __webpack_require__.r(__webpack_exports__);
 class WebRequestService {
     constructor(http) {
         this.http = http;
-        this.ROOT_URL = '/api/';
+        this.ROOT_URL = '/api';
     }
     get(uri) {
         return this.http.get(`${this.ROOT_URL}/${uri}`);
