@@ -84,7 +84,7 @@ ProductDataService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/orisayag/Desktop/project 4/client/src/main.ts */"zUnb");
+module.exports = __webpack_require__(/*! /Users/orisayag/Desktop/project4/client/src/main.ts */"zUnb");
 
 
 /***/ }),
@@ -3410,7 +3410,7 @@ __webpack_require__.r(__webpack_exports__);
 class WebRequestService {
     constructor(http) {
         this.http = http;
-        this.ROOT_URL = 'http://localhost:5000';
+        this.ROOT_URL = '/api/';
     }
     get(uri) {
         return this.http.get(`${this.ROOT_URL}/${uri}`);
