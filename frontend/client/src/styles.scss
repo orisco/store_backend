@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/bulma/bulma.sass";
-@import url("http://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600|Nunito:200,300,400,600,700|Rubik:300,500");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600|Nunito:200,300,400,600,700|Rubik:300,500");
 @import "@angular/material/prebuilt-themes/indigo-pink.css";
 
 html,
@@ -45,7 +45,7 @@ body {
 .upper {
   display: flex;
   flex-direction: column;
-  justify-content:flex-end;
+  justify-content: flex-end;
   flex-wrap: wrap;
   align-items: center;
   width: 500px;
