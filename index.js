@@ -21,7 +21,6 @@ app.get('/*', function(req,res) {
 res.sendFile(path.join(__dirname+'/dist/client/index.html'));
 });
 
-
 // ROUTES
 app.use('/user', require("./routes/user.routes"))
 app.use('/auth', require("./routes/auth.routes"))
