@@ -13,6 +13,16 @@ load()
 app.use(cors())
 app.use(express.json())
 
+
+
+// ROUTES
+app.use('/api/user', require("./routes/user.routes"))
+app.use('/api/auth', require("./routes/auth.routes"))
+app.use('/api/checkout', require("./routes/checkout.routes"))
+app.use('/api/product', require("./routes/product.routes"))
+app.use('/api/cart', require("./routes/cart.routes"))
+
+
 // Serve only the static files form the dist directory
 app.use(express.static(__dirname + '/dist/client'));
 
@@ -20,13 +30,6 @@ app.get('/*', function(req,res) {
     
 res.sendFile(path.join(__dirname+'/dist/client/index.html'));
 });
-
-// ROUTES
-app.use('/user', require("./routes/user.routes"))
-app.use('/auth', require("./routes/auth.routes"))
-app.use('/checkout', require("./routes/checkout.routes"))
-app.use('/product', require("./routes/product.routes"))
-app.use('/cart', require("./routes/cart.routes"))
 
 
 const PORT = process.env.PORT || 8080
