@@ -8,11 +8,9 @@ const path = require('path')
 // RUN THIS ONCE FOR ADMIN, CATEGORIES AND PRODUCTS.
 load()
 
-
 // MIDDLEWARE
 app.use(cors())
 app.use(express.json())
-
 
 
 // ROUTES
@@ -30,8 +28,8 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT || 80
 
 app.listen(PORT, () => {
-  console.log("server is running")
+  console.log("server is running on " + PORT)
 })

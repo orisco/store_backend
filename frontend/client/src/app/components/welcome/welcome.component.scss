@@ -1,15 +1,3 @@
-.bttm {
-  background: #edafb885;
-  animation: fade 3s;
-  @keyframes fade {
-    0% {
-      background: #f7e9e3da;
-    }
-    100% {
-      background: #edafb885;
-    }
-  }
-}
 .upper {
   display: flex;
   justify-content: center;
@@ -60,32 +48,31 @@
   .fa-shopping-basket {
     font-size: 20px;
     animation: transform 1s;
-  @keyframes transform {
-    0% {
-      transform: rotate(20deg);
-      transform: scale(1.9);
+    @keyframes transform {
+      0% {
+        transform: rotate(20deg);
+        transform: scale(1.9);
+      }
+      20% {
+        transform: rotate(-20deg);
+      }
+      40% {
+        transform: rotate(20deg);
+      }
+      60% {
+        transform: rotate(-20deg);
+      }
+      80% {
+        transform: rotate(20deg);
+        transform: scale(1.3);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
     }
-    20% {
-      transform: rotate(-20deg);
-    }
-    40% {
-      transform: rotate(20deg);
-    }
-    60% {
-      transform: rotate(-20deg);
-    }
-    80% {
-      transform: rotate(20deg);
-      transform: scale(1.3);
-
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-  }
     &:hover {
       transform: scale(1.5);
-  }
+    }
   }
   &:hover {
     .cartInfo {
